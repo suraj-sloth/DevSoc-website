@@ -1,0 +1,538 @@
+.{
+	margin:0px ;
+	padding:0px ;
+	font-family: "Lato" , "Arial" , sans-serif ;
+	width: 100%;
+	height: 100%;
+	overflow-x:hidden; 
+}
+
+html{
+	background-color: #fff;
+	color:#CECECE;
+	/*since html is basically of text , thus name is just color*/
+	font-family: "Lato" , "Arial" , sans-serif ;
+	/*arial for backup if internet connection is not working , sans-serif is a  css keyword*/
+	font-size:20px ;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	/*for smooth rendering of text*/
+}
+
+/*****************************************************************************************************************
+ 							 NAVIGATION BAR
+******************************************************************************************************************/
+
+nav{
+	width:100%;
+	overflow: none; 
+	display:flex;
+	flex-wrap:nowrap;
+	font-weight: 400;
+	padding-top: .8%;
+	padding-bottom: .8%;
+}
+
+.main-nav a{
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	color:#E0E0E0;
+	letter-spacing: .1rem;
+
+}
+
+nav ul {
+	padding: 0;
+	margin : 0;
+	list-style: none;
+	display: inline-block;
+	/*display: flex;*/
+	/*for display in single line ,like flexbox one step to responsive*/
+	
+}
+
+nav li{
+	float: left;
+	margin-top:16px; 
+	margin-left: .8em ;
+	flex: auto;
+	text-align: center;
+	color:#F5F5F5;
+	padding-left: 1px ;
+	padding-right: 1px;
+	display: inline-block;
+}
+
+.logo {
+	width:32%;
+}
+
+
+.logo img {
+	height: 64px ;
+	width : 112px ;
+	float: left;
+	padding-left: 10%;
+}
+
+.main-nav a:hover {
+	background:#D4E157;
+	/*bg color whens cursor hoves*/
+	transition: .5s ;
+	text-transform: underline;
+	position: relative;
+	/*to be relative to logo*/
+	text-transform: uppercase;
+	color: #263238;
+	border-radius: .1rem;
+}
+
+
+.main-nav a:active {
+  box-shadow: none;
+  
+  background:#D4E157;
+
+}
+
+/********STICKY NAVIGATION**************/
+.sticky-nav{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	box-shadow: 0 2px 2px #efefef;
+
+	display:flex;
+	flex-wrap:nowrap;
+	background-color: white;
+	opacity: 0.8;
+	z-index: 1; /*priority first over every other element*/
+}
+
+.sticky-nav a{
+	color:#263238;
+}
+
+
+.mobile-nav-icon{
+	display: none;
+	float: left;
+}
+
+
+.mobile-nav-icon i{
+	display: block;
+	border:0px;
+	padding-bottom: 0px;
+	margin: 0px;
+}
+
+
+
+
+/****************************************************************************************************************************
+ 							 HEADER
+*****************************************************************************************************************************/
+
+
+header{
+	background-image: linear-gradient(rgba(0 , 0 , 0 ,0.6) , rgba(0 , 0 , 0 ,0.6)) , url(images/bg1.jpg);
+	
+	/*-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 75% 90%, 50% 100%, 20% 86%, 0 100%, 0% 35%, 0 0);
+	clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 75% 90%, 50% 100%, 20% 86%, 0 100%, 0% 35%, 0 0); */
+	
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	overflow-y:none; 
+}
+
+.title-box{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	text-align: left;
+}
+
+h1{
+	margin-top: 0;
+	margin-bottom: 20px;
+
+}
+
+.title-box h2{
+	padding-bottom: 50px;  
+	font-weight: 300 ; 
+}
+
+.title-box a {
+	text-decoration: none;
+	background-color: #689F38 ;
+	padding: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	color:white;
+	border-radius: 5px;
+
+}
+
+.title-box a:hover {
+	background-color: #D4E157 ;
+	color: #3b3b3b ;
+	transition: background-color 0.2s;
+}
+
+
+
+
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+
+
+
+/***********************************************************************************************************
+ 							 ABOUT US SECTION
+***********************************************************************************************************/
+
+
+.about-us{
+	padding-left: 2%;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+
+hr{
+	height: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	width:30%;
+	align-content: center;
+	background-color:#212121 ;
+	opacity: 0.5;
+	border:none;
+
+}
+
+.about-us h1{
+	margin-top: 60px;
+	color:#2c3e50;
+	padding-top: 2%;
+	text-align: center;
+}
+
+.about-us-title{
+	text-align: center;
+	font-weight: 400 ;
+	color: #485460;
+	padding-bottom: 5px;
+}
+
+.about-us-containers{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.our-motto{
+	width:40%;
+	/*for covering 40% part of that section or another content*/
+	padding-left: auto;
+	padding-right: 10%;
+	text-align: left;
+	float: left;
+	display: block;
+}
+
+.our-motto h2{
+	color: #2c3e50;
+	padding: 0px;
+	text-align: center;
+}
+
+.our-motto img {
+	width:13%;
+	height: auto;
+	padding:0px;
+	border-collapse: collapse;
+	display: block;
+	padding-left: 37%;
+}
+
+.our-motto p{
+	color: #485460;
+}
+
+.our-aim{
+	width: 40%;
+	/*width should be mentioned for both otherwise it wont float in left area*/
+	float:left;
+	padding-left: 10% ;
+	display:block;
+}
+
+.our-aim h2{
+	color: #2c3e50;
+}
+
+.our-aim ul{
+	color:#485460;
+}
+.our-aim img{
+	width: 100%
+	height:auto;
+	padding-left: 25%
+
+}
+
+
+/************************************************************************
+ 							 OUR PROJECTS SECTION
+************************************************************************/
+
+
+.our-projects{
+	background: linear-gradient( 90deg , #FFEE58 ,#C0CA33  , #AFB42B , #689F38);
+	/*since linear gradient is an image property 
+	thus it doesnt work with background-color (text propert)*/	
+	color: #485460 ;
+	padding-top: 80px;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.our-projects img{
+	width: 40%;
+	height: auto;
+	float: left;
+	padding-left: 5% ;
+
+}
+
+.our-projects h1{
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.project-content{
+	float:left;
+	width:40%;
+	padding-left: 10%;
+
+}
+
+.project-content a{
+	text-decoration: none;
+	background-color: #558B2F;
+	padding: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	color:white;
+	border-radius: 5px;
+}
+
+.project-content a:hover {
+	background-color: #D4E157;
+	color: #3b3b3b ;
+	transition: background-color 0.2s;
+}
+
+
+/*************************************************************************************
+						EVENTS SECTION
+*************************************************************************************/
+
+
+.events{
+	color: #485460 ;
+	padding-top: 70px;
+	padding-bottom:20px;
+	height:100vh;
+	
+}
+
+.events h1{
+	text-align: center;
+}
+
+.events-content{
+	float:left;
+	width:40%;
+	padding-left: 5%;
+	padding-right: 15%;
+	padding-top: 5%;
+}
+
+.events-content a {
+	text-decoration: none;
+	background-color: #558B2F;
+	padding: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	color:white;
+	border-radius: 5px;
+}
+
+.events-content a:hover {
+	background-color: #D4E157 ;
+	color: #3b3b3b ;
+	transition: background-color 0.2s;
+}
+
+.events-image{
+	position: relative;
+}
+
+.events-image img{
+	float:left;
+	width:35%;
+	margin-top: 5%;
+	height:auto;
+	display: block;
+	margin-bottom: 0;
+}
+
+.events-image img:hover { 
+	transition: .5s;
+	opacity:0.4;
+}
+
+.text{
+	padding-left: 70%;
+	font-size: 90%;
+	float:left; 
+	margin: 0, 0 , 0 ,0;
+	margin-left: 0;
+	position: absolute;
+	margin-top: 17%;
+	text-align: center;
+	margin-right: 15%;
+	visibility: hidden;
+	color: #33691E;
+	font-weight: 400;
+}
+
+.events-image:hover .text{
+	visibility: visible;
+	transition: .5s;
+	opacity: 1;
+}
+
+/*
+.upcoming-events{
+	padding-top: 20px;
+	padding-left: 5%;
+	color: #485460 ;
+	padding-top: 20px;
+	padding-bottom:20px;
+	height:100vh;
+}
+
+.upcoming-events h1{
+	text-align: center;
+	letter-spacing: .5rem;
+}
+
+.slider-container{
+	width:75%;
+	height: 75%
+	height:auto; 
+	overflow: hidden;
+	top: 50%;
+	left:50%;
+}
+
+.image-container{
+	width:75%;
+	height:90%; 
+	position: relative;
+	transition:left 2s;
+
+}
+
+.slider-image{
+	margin:0px;
+	padding: 0px;
+	float: left;
+	position: relative;
+	top: 25%;
+	left: 25%;
+	box-shadow: 1px 2px 5px white;
+	animation: slider 5s infinite linear;
+}
+
+@keyframes slider{
+	0%{  }
+	35%{  }
+	75%{  }
+}
+
+*/
+
+
+footer{
+	margin: 0;
+	background: linear-gradient( 90deg ,#78909C ,#546E7A, #455A64 , #37474F);
+	background-size: cover;
+	color: #BDBDBD;
+	max-height: 100%;
+	padding-left: 5%;
+	padding-bottom: 1%;
+	padding-top: 2%;
+	height: cover ;
+	overflow-x: hidden;
+	/*this hides overflow of content along x-axis*/
+}
+
+footer h2{
+	text-transform: uppercase;
+	letter-spacing: 0.10rem;
+}
+
+footer a{
+	text-decoration: none;
+	color: #BDBDBD;
+}
+
+.social-media{
+	float:left;
+}
+
+.footer-content1{
+	float:left;
+	padding-left: 20%;
+}
+
+.footer-content1 li { 
+	font-size: .8rem ;  
+	list-style: none;
+}
+
+.footer-content2 {
+	float:left;
+	font-size: .8rem;
+	padding-left:20%;
+	height: 10vh;
+	max-width:auto;
+}
+
+.map{
+    position: relative; // This is the aspect ratio
+    overflow: hidden;
+    height: 20vh;
+   	width:auto;
+
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+ }
